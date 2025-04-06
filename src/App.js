@@ -1,8 +1,14 @@
+// src/App.js
+import Header from "./components/Header";
+import Home from "./pages/Home";
+
 function App() {
   return (
-    <div>
-      <h1>Hello from App</h1>
-    </div>
+    <>
+      <Header />
+      <Home />
+    </>
   );
 }
+
 export default App;
