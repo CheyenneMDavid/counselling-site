@@ -1,0 +1,86 @@
+/* Ensure full height layout for sticky footer */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  background-color: whitesmoke;
+  color: darkslategray;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.siteHeader {
+  background-color: lightseagreen !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+/* Footer pinned to bottom */
+.siteFooter {
+  background-color: lightseagreen !important;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* Main takes up remaining space */
+main {
+  flex: 1;
+}
+
+/* Logo */
+.logo {
+  background-color: black;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+/* Navigation */
+.siteNavbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.navLink {
+  color: white !important;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: lightgray !important;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .siteHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .siteNavbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
