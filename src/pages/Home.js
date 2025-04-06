@@ -2,7 +2,8 @@
 function Home() {
   return (
     <main>
-      <p>Welcome to the counselling site.</p>
+      <h2>Site Under Maintenance</h2>
+      <p>Please check back soon.</p>
     </main>
   );
 }
